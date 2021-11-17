@@ -24,3 +24,4 @@ pytest -ssv
 
 ## Descrição
 A descrição do exercício está no arquivo **[explorando_marte.pdf](./explorando_marte.pdf)**.
+**Atenção**: Não tratei os valores negativos, pois em um plano cartesiano o X e Y podem assumir valores negativos.
