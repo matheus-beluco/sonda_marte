@@ -22,9 +22,11 @@ def verify_direction(direction: str):
     return direction
 
 
-def verify_coordinates(x, y):
-    if type(x) != int or type(y) != int:
+def convert_coordinates(x: str, y: str):
+    if not x.isnumeric() or not y.isnumeric():
         raise CoordinatesError("Invalid types.")
+
+    return int(x), int(y)
 
 
 def next_direction(letter: str, direction: str) -> str:
@@ -37,7 +39,7 @@ def next_direction(letter: str, direction: str) -> str:
     return direction_right[direction]
 
 
-def probe_movement(x: int, y: int, direction: str, command: str) -> str:
+def probe_movement(x: str, y: str, direction: str, command: str) -> str:
     try:
 
         """
@@ -45,7 +47,7 @@ def probe_movement(x: int, y: int, direction: str, command: str) -> str:
         """
         command = verify_command(command)
         direction = verify_direction(direction)
-        verify_coordinates(x, y)
+        x, y = convert_coordinates(x, y)
 
         """
             This part moves the probe.
