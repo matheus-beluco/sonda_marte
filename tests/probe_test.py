@@ -17,3 +17,4 @@ def test_probe_movement_3():
     result = probe_movement(x=2, y=3, direction="S", command="RMLMLLMRML")
     expected = "2 3 N"
     assert result == expected
+    
