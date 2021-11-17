@@ -1,5 +1,5 @@
 from exc import CommandError, CoordinatesError, DirectionError
-import ipdb
+
 
 def verify_command(command: str):
     command = command.upper()
@@ -41,12 +41,11 @@ def probe_movement(x: int, y: int, direction: str, command: str) -> str:
     try:
 
         """
-            This part checks the function entries.
+        This part checks the function entries.
         """
         command = verify_command(command)
         direction = verify_direction(direction)
-        verify_coordinates(x,y)
-
+        verify_coordinates(x, y)
 
         """
             This part moves the probe.
