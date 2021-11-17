@@ -3,7 +3,7 @@ Um programa para pousar e movimentar sondas em marte.
 
 ## Como instalaer e rodar?
 **Atenção**: O guia de instalação é certificado apenas para o sistema operacional Ubuntu 20.04LTS.
-1. Clone **[este repositório](https://github.com/matheus-b**eluco/sonda_marte)**
+1. Clone **[este repositório](https://github.com/matheus-beluco/sonda_marte)**
 2. Crie um ambiente virtual
 ```
 python -m venv venv
